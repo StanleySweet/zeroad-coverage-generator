@@ -21,6 +21,9 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+globalscripts
+simulation
+maps
 *.lcov
 
 # nyc test coverage
@@ -128,3 +131,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
