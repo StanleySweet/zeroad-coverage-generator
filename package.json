@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@istanbuljs/nyc-config-hook-run-in-this-context": "^1.0.0",
+    "@types/node": "^18.14.1",
+    "istanbul-lib-hook": "^3.0.0",
+    "nyc": "^15.1.0",
+    "qunit": "^2.19.4"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "node-fetch": "^2.6.9",
+    "tosource": "^2.0.0-alpha.3"
+  },
+  "license": "MIT",
+  "scripts": {
+    "setup": "node create-workspace.js",
+    "test": "qunit",
+    "html": "yarn coverage && genhtml coverage/lcov.info -o coverage -p /mnt/c/Dev/Perso/Node-JS-Pyrogenesis-Tests > output.log",
+    "coverage": "yarn setup && nyc yarn test"
+  },
+  "type": "module"
+}

@@ -1,0 +1,20 @@
+{
+  "exclude": [
+    "**/coverage/**",
+    "**/test/**",
+    "**/interfaces/**",
+    "**/tests/**",
+    "PyrogenesisEngine.js",
+    "PyrogenesisContext.js",
+    "create-workspace.js",
+    "Spy.js"
+  ],
+  "reporter": [
+    "lcovonly"
+  ],
+  "all": true,
+  "hook-require": true,
+  "hook-run-in-context": true,
+  "hook-run-in-this-context": true,
+  "extends": "@istanbuljs/nyc-config-hook-run-in-this-context"
+}
